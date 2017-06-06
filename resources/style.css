@@ -1,0 +1,120 @@
+/* This section creates the overall formatting */
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+
+}
+
+/* This section creates the styling for the fixed header */
+header {
+  display: flex;
+/*  position: fixed;   For some reason this overlaps the mission section below, I've tried making the mission section position: relative but that didn't work */
+  align-items: center;
+  width: 100%;
+  height: 69px;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
+}
+header .logo {
+  padding-left: 10px;
+}
+header nav {
+  text-align: right;
+  padding-right: 20px;
+}
+header nav span {
+  margin: 20px;
+  text-decoration: underline;
+}
+
+/* This section creates the mission image and logo  */
+.main {
+  display: flex;
+/*  position: relative; for some reason when the header is fixed it overlaps this section */
+  align-items:center;
+  justify-content: center;
+}
+#mission {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+#mission .content {
+  text-align: center;
+  background-color: black;
+  width: 1200px;
+}
+
+/* This section creates tea of the month */
+.monthly {
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
+/* This creates the box to center tea of the month content in */
+.segment2 {
+  width: 100%;
+  justify-content: center;
+/* How to get the tea of the month 1000px box centered?, I've tried a couple of different things and it won't align center */
+}
+.monthly {
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+/* This is the section of the code that has the tiled pictures */
+.steeping {
+/* How to get the pictures to fit inside their boxes horizontally?*/
+/* How to get the headers to appear below the boxes? */
+/* Is there a better way to set up this section of code??? */
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* This is the section of the code that controls how each picture should look and beahve */
+.steeped {
+  display: flex;
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+}
+
+/* This section of the code covers the contact information box */
+.contact {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  /* How to get the locations to be arranged in three horizontal boxes? */
+}
+.locations {
+  display: flex;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.location {
+  display: block;
+  background-color: black;
+  opacity: 1;
+  width: 300px;
+  margin: 20px;
+  justify-content: center;
+}
+
+/* This section of the code formats the footer */
+footer {
+  position: relative;
+  height: 69px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
